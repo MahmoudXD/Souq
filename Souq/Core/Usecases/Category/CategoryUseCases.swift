@@ -9,7 +9,7 @@ import Foundation
 
 protocol CategoryUseCase {
     func getCategory(callBack: @escaping (Result<[Category], Error>) -> Void)
-    func getSubCategory(categoryId: String,
+    func getSubCategory(categoryId: Int,
                         callBack: @escaping (Result<[Category], Error>) -> Void)
 }
 
@@ -25,7 +25,7 @@ class CategoryUseCaseImplementation: CategoryUseCase {
         self.categoryGateway.getCategory(callBack: callBack)
     }
     
-    func getSubCategory(categoryId: String, callBack: @escaping (Result<[Category], Error>) -> Void) {
+    func getSubCategory(categoryId: Int, callBack: @escaping (Result<[Category], Error>) -> Void) {
         self.categoryGateway.getSubCategory(categoryId: categoryId, callBack: callBack)
     }
 }

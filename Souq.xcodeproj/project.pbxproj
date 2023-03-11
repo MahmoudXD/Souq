@@ -33,6 +33,15 @@
 		F158DE3A29BC9CDA0079E80B /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE3929BC9CDA0079E80B /* CategoryAPI.swift */; };
 		F158DE3C29BC9CEE0079E80B /* CategoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE3B29BC9CEE0079E80B /* CategoryNetwork.swift */; };
 		F158DE3F29BC9EAB0079E80B /* CategoryUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE3E29BC9EAB0079E80B /* CategoryUseCases.swift */; };
+		F158DE4129BCA4FA0079E80B /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4029BCA4FA0079E80B /* String+Ex.swift */; };
+		F158DE4529BCA6DC0079E80B /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F158DE4729BCA6DC0079E80B /* Localization.strings */; };
+		F158DE4B29BCA7A50079E80B /* CategoryViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4A29BCA7A50079E80B /* CategoryViewExtensions.swift */; };
+		F158DE4D29BCA7ED0079E80B /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4C29BCA7ED0079E80B /* CategoryViewModel.swift */; };
+		F158DE5329BCA8D90079E80B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE5129BCA8D90079E80B /* CategoryCollectionViewCell.swift */; };
+		F158DE5429BCA8D90079E80B /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F158DE5229BCA8D90079E80B /* CategoryCollectionViewCell.xib */; };
+		F158DE5629BCA9DC0079E80B /* UICollectionViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE5529BCA9DC0079E80B /* UICollectionViewEx.swift */; };
+		F158DE5829BCB4E10079E80B /* SubCategoryViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE5729BCB4E10079E80B /* SubCategoryViewExtention.swift */; };
+		F158DE5A29BCB4EE0079E80B /* SubCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE5929BCB4EE0079E80B /* SubCategoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +77,17 @@
 		F158DE3929BC9CDA0079E80B /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		F158DE3B29BC9CEE0079E80B /* CategoryNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNetwork.swift; sourceTree = "<group>"; };
 		F158DE3E29BC9EAB0079E80B /* CategoryUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUseCases.swift; sourceTree = "<group>"; };
+		F158DE4029BCA4FA0079E80B /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		F158DE4629BCA6DC0079E80B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		F158DE4829BCA6F20079E80B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F158DE4929BCA6F20079E80B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localization.strings; sourceTree = "<group>"; };
+		F158DE4A29BCA7A50079E80B /* CategoryViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewExtensions.swift; sourceTree = "<group>"; };
+		F158DE4C29BCA7ED0079E80B /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		F158DE5129BCA8D90079E80B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		F158DE5229BCA8D90079E80B /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		F158DE5529BCA9DC0079E80B /* UICollectionViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewEx.swift; sourceTree = "<group>"; };
+		F158DE5729BCB4E10079E80B /* SubCategoryViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewExtention.swift; sourceTree = "<group>"; };
+		F158DE5929BCB4EE0079E80B /* SubCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +167,7 @@
 		F158DDF529BC8E180079E80B /* Scense */ = {
 			isa = PBXGroup;
 			children = (
+				F158DE4E29BCA8B40079E80B /* Views */,
 				F158DDFC29BC8E6F0079E80B /* Home */,
 			);
 			path = Scense;
@@ -172,6 +193,7 @@
 		F158DDF829BC8E3A0079E80B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F158DE4229BCA69D0079E80B /* Localization */,
 				F158DE1729BC90360079E80B /* Assets */,
 				F158DDF929BC8E4A0079E80B /* Font */,
 				F158DDEB29BC8DC40079E80B /* LaunchScreen.storyboard */,
@@ -200,6 +222,8 @@
 		F158DDFD29BC8E8F0079E80B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F158DE4C29BCA7ED0079E80B /* CategoryViewModel.swift */,
+				F158DE4A29BCA7A50079E80B /* CategoryViewExtensions.swift */,
 				F158DDFF29BC8EB30079E80B /* CategoryViewController.swift */,
 				F158DE0029BC8EB30079E80B /* CategoryViewController.xib */,
 			);
@@ -209,6 +233,8 @@
 		F158DDFE29BC8E990079E80B /* SubCategoty */ = {
 			isa = PBXGroup;
 			children = (
+				F158DE5929BCB4EE0079E80B /* SubCategoryViewModel.swift */,
+				F158DE5729BCB4E10079E80B /* SubCategoryViewExtention.swift */,
 				F158DE0329BC8EC10079E80B /* SubCatogryViewController.swift */,
 				F158DE0429BC8EC10079E80B /* SubCatogryViewController.xib */,
 			);
@@ -306,7 +332,9 @@
 		F158DE1F29BC99B40079E80B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F158DE5529BCA9DC0079E80B /* UICollectionViewEx.swift */,
 				F158DE2D29BC9B0E0079E80B /* UIImage+Ex.swift */,
+				F158DE4029BCA4FA0079E80B /* String+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +388,39 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		F158DE4229BCA69D0079E80B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F158DE4729BCA6DC0079E80B /* Localization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F158DE4E29BCA8B40079E80B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F158DE4F29BCA8BB0079E80B /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F158DE4F29BCA8BB0079E80B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F158DE5029BCA8C00079E80B /* Category */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F158DE5029BCA8C00079E80B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F158DE5129BCA8D90079E80B /* CategoryCollectionViewCell.swift */,
+				F158DE5229BCA8D90079E80B /* CategoryCollectionViewCell.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +465,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = F158DDD429BC8DC20079E80B;
 			productRefGroup = F158DDDE29BC8DC20079E80B /* Products */;
@@ -421,6 +483,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F158DDED29BC8DC40079E80B /* LaunchScreen.storyboard in Resources */,
+				F158DE5429BCA8D90079E80B /* CategoryCollectionViewCell.xib in Resources */,
+				F158DE4529BCA6DC0079E80B /* Localization.strings in Resources */,
 				F158DDEA29BC8DC40079E80B /* Assets.xcassets in Resources */,
 				F158DE1629BC90040079E80B /* Color.xcassets in Resources */,
 				F158DE0229BC8EB30079E80B /* CategoryViewController.xib in Resources */,
@@ -478,18 +542,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F158DE2E29BC9B0E0079E80B /* UIImage+Ex.swift in Sources */,
+				F158DE5A29BCB4EE0079E80B /* SubCategoryViewModel.swift in Sources */,
 				F158DE3429BC9C150079E80B /* APIGatewayCategoryImplementation.swift in Sources */,
 				F158DE2829BC9A280079E80B /* TargetType.swift in Sources */,
 				F158DE0129BC8EB30079E80B /* CategoryViewController.swift in Sources */,
 				F158DE1429BC8FC30079E80B /* Colors.swift in Sources */,
 				F158DE0529BC8EC10079E80B /* SubCatogryViewController.swift in Sources */,
+				F158DE5829BCB4E10079E80B /* SubCategoryViewExtention.swift in Sources */,
+				F158DE5629BCA9DC0079E80B /* UICollectionViewEx.swift in Sources */,
+				F158DE4D29BCA7ED0079E80B /* CategoryViewModel.swift in Sources */,
 				F158DE3C29BC9CEE0079E80B /* CategoryNetwork.swift in Sources */,
 				F158DE3A29BC9CDA0079E80B /* CategoryAPI.swift in Sources */,
+				F158DE4B29BCA7A50079E80B /* CategoryViewExtensions.swift in Sources */,
 				F158DE3729BC9C4A0079E80B /* CategoryGateway.swift in Sources */,
+				F158DE4129BCA4FA0079E80B /* String+Ex.swift in Sources */,
 				F158DE0D29BC8EE80079E80B /* Font.swift in Sources */,
 				F158DE0C29BC8EE80079E80B /* CustomFontDescriptor.swift in Sources */,
 				F158DE3F29BC9EAB0079E80B /* CategoryUseCases.swift in Sources */,
 				F158DE2B29BC9A280079E80B /* CustomIntercepter.swift in Sources */,
+				F158DE5329BCA8D90079E80B /* CategoryCollectionViewCell.swift in Sources */,
 				F158DE2229BC99D00079E80B /* Constant.swift in Sources */,
 				F158DE0F29BC8F460079E80B /* DesignSystem.swift in Sources */,
 				F158DE0B29BC8EE80079E80B /* TypoGraphy.swift in Sources */,
@@ -507,8 +578,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				F158DDEC29BC8DC40079E80B /* Base */,
+				F158DE4829BCA6F20079E80B /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F158DE4729BCA6DC0079E80B /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F158DE4629BCA6DC0079E80B /* en */,
+				F158DE4929BCA6F20079E80B /* ar */,
+			);
+			name = Localization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -518,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -578,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -641,6 +724,7 @@
 				INFOPLIST_FILE = Souq/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -669,6 +753,7 @@
 				INFOPLIST_FILE = Souq/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

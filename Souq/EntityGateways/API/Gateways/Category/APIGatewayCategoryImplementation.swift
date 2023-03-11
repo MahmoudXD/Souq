@@ -19,7 +19,7 @@ class APIGatewayCategoryImplementation: CategoryGateway {
         self.categoryAPI.getCategory(callBack: callBack)
     }
     
-    func getSubCategory(categoryId: String, callBack: @escaping (Result<[Category], Error>) -> Void) {
+    func getSubCategory(categoryId: Int, callBack: @escaping (Result<[Category], Error>) -> Void) {
         self.categoryAPI.getSubCategory(categoryId: categoryId, callBack: callBack)
     }
 }
