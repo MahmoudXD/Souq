@@ -34,7 +34,7 @@
 		F158DE3C29BC9CEE0079E80B /* CategoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE3B29BC9CEE0079E80B /* CategoryNetwork.swift */; };
 		F158DE3F29BC9EAB0079E80B /* CategoryUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE3E29BC9EAB0079E80B /* CategoryUseCases.swift */; };
 		F158DE4129BCA4FA0079E80B /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4029BCA4FA0079E80B /* String+Ex.swift */; };
-		F158DE4529BCA6DC0079E80B /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = F158DE4729BCA6DC0079E80B /* Localization.strings */; };
+		F158DE4529BCA6DC0079E80B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F158DE4729BCA6DC0079E80B /* Localizable.strings */; };
 		F158DE4B29BCA7A50079E80B /* CategoryViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4A29BCA7A50079E80B /* CategoryViewExtensions.swift */; };
 		F158DE4D29BCA7ED0079E80B /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE4C29BCA7ED0079E80B /* CategoryViewModel.swift */; };
 		F158DE5329BCA8D90079E80B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DE5129BCA8D90079E80B /* CategoryCollectionViewCell.swift */; };
@@ -78,9 +78,9 @@
 		F158DE3B29BC9CEE0079E80B /* CategoryNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNetwork.swift; sourceTree = "<group>"; };
 		F158DE3E29BC9EAB0079E80B /* CategoryUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUseCases.swift; sourceTree = "<group>"; };
 		F158DE4029BCA4FA0079E80B /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
-		F158DE4629BCA6DC0079E80B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		F158DE4629BCA6DC0079E80B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F158DE4829BCA6F20079E80B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		F158DE4929BCA6F20079E80B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localization.strings; sourceTree = "<group>"; };
+		F158DE4929BCA6F20079E80B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F158DE4A29BCA7A50079E80B /* CategoryViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewExtensions.swift; sourceTree = "<group>"; };
 		F158DE4C29BCA7ED0079E80B /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		F158DE5129BCA8D90079E80B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -391,7 +391,7 @@
 		F158DE4229BCA69D0079E80B /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				F158DE4729BCA6DC0079E80B /* Localization.strings */,
+				F158DE4729BCA6DC0079E80B /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -484,7 +484,7 @@
 			files = (
 				F158DDED29BC8DC40079E80B /* LaunchScreen.storyboard in Resources */,
 				F158DE5429BCA8D90079E80B /* CategoryCollectionViewCell.xib in Resources */,
-				F158DE4529BCA6DC0079E80B /* Localization.strings in Resources */,
+				F158DE4529BCA6DC0079E80B /* Localizable.strings in Resources */,
 				F158DDEA29BC8DC40079E80B /* Assets.xcassets in Resources */,
 				F158DE1629BC90040079E80B /* Color.xcassets in Resources */,
 				F158DE0229BC8EB30079E80B /* CategoryViewController.xib in Resources */,
@@ -583,13 +583,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F158DE4729BCA6DC0079E80B /* Localization.strings */ = {
+		F158DE4729BCA6DC0079E80B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F158DE4629BCA6DC0079E80B /* en */,
 				F158DE4929BCA6F20079E80B /* ar */,
 			);
-			name = Localization.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
