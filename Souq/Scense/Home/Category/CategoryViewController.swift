@@ -12,6 +12,5 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = DesignSystem.Colors.primary.color
     }
 }
