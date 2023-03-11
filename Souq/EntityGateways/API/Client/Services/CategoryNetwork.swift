@@ -10,7 +10,7 @@ import Alamofire
 
 enum CategoryNetwork {
     case getCategory,
-         getSubCategory(categoryId: String)
+         getSubCategory(categoryId: Int)
 }
 
 extension CategoryNetwork: TargetType {

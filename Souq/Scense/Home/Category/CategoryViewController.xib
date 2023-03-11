@@ -3,6 +3,7 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="Souq" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="93P-pT-OQq" id="VTd-Bf-tXa"/>
+                <outlet property="loaderView" destination="fkQ-cT-7Fc" id="WjS-eM-BEE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +20,66 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-Fy-P9a">
+                    <rect key="frame" x="0.0" y="44" width="414" height="53.666666666666657"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-4z-kiW">
+                            <rect key="frame" x="157" y="0.0" width="100" height="53.666666666666664"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="Primary"/>
+                    <constraints>
+                        <constraint firstItem="ox4-4z-kiW" firstAttribute="centerX" secondItem="oTL-Fy-P9a" secondAttribute="centerX" id="2FJ-cF-dgw"/>
+                        <constraint firstAttribute="bottom" secondItem="ox4-4z-kiW" secondAttribute="bottom" id="DP1-rW-WI1"/>
+                        <constraint firstItem="ox4-4z-kiW" firstAttribute="top" secondItem="oTL-Fy-P9a" secondAttribute="top" id="L4i-aP-cE0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4Y-ae-W7f">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" name="Primary"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="93P-pT-OQq">
+                    <rect key="frame" x="0.0" y="109.66666666666669" width="414" height="786.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IE3-Sm-gFS">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fkQ-cT-7Fc">
+                    <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                    <color key="color" name="Primary"/>
+                </activityIndicatorView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="138" y="20"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oTL-Fy-P9a" secondAttribute="trailing" id="2eM-Hg-QKm"/>
+                <constraint firstAttribute="bottom" secondItem="93P-pT-OQq" secondAttribute="bottom" id="8SH-30-Ak8"/>
+                <constraint firstItem="fkQ-cT-7Fc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qtp-Fu-UC6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="93P-pT-OQq" secondAttribute="trailing" id="Uiv-8U-hna"/>
+                <constraint firstItem="93P-pT-OQq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xp8-R2-8RH"/>
+                <constraint firstItem="93P-pT-OQq" firstAttribute="top" secondItem="oTL-Fy-P9a" secondAttribute="bottom" constant="12" id="cFY-dW-LGg"/>
+                <constraint firstItem="fkQ-cT-7Fc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dVO-8E-Jxg"/>
+                <constraint firstItem="oTL-Fy-P9a" firstAttribute="top" secondItem="J4Y-ae-W7f" secondAttribute="bottom" id="e3i-Re-Xpq"/>
+                <constraint firstItem="oTL-Fy-P9a" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f3z-Og-8oG"/>
+                <constraint firstItem="J4Y-ae-W7f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fDX-Jb-sqs"/>
+                <constraint firstAttribute="trailing" secondItem="J4Y-ae-W7f" secondAttribute="trailing" id="g3r-vM-xMZ"/>
+                <constraint firstItem="oTL-Fy-P9a" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="i11-Ce-3qd"/>
+                <constraint firstItem="oTL-Fy-P9a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kVs-KM-aNe"/>
+                <constraint firstItem="J4Y-ae-W7f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wwq-3E-jXV"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="19.419642857142858"/>
         </view>
     </objects>
     <resources>
+        <image name="top_bar_logo" width="100" height="75"/>
+        <namedColor name="Primary">
+            <color red="0.18823529780000001" green="0.23921570180000001" blue="0.3058823645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

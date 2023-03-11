@@ -9,6 +9,6 @@ import Foundation
 
 protocol CategoryGateway {
     func getCategory(callBack: @escaping (Result<[Category], Error>) -> Void)
-    func getSubCategory(categoryId: String,
+    func getSubCategory(categoryId: Int,
                         callBack: @escaping (Result<[Category], Error>) -> Void)
 }

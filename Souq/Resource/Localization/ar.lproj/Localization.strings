@@ -1,0 +1,13 @@
+/* 
+  Localization.strings
+  Souq
+
+  Created by Mahmoud Sherbeny on 11/03/2023.
+  
+*/
+
+"lang" = "ar";
+"Moters" = "محركات";
+"Alert" = "تنبية";
+"No Child" = "لا يوجد";
+"Ok" = "نعم";

@@ -10,7 +10,8 @@ import UIKit
 
 extension DesignSystem {
     enum Colors: String {
-        case primary = "Black"
+        case primary = "Primary"
+        case white = "White"
         
         var color: UIColor {
             return UIColor(named: self.rawValue) ?? .white

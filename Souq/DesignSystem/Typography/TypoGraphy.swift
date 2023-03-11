@@ -10,12 +10,15 @@ import UIKit
 
 extension DesignSystem {
     enum TypoGraphy {
-        case title //24.0 , GEMedium
+        case title //18.0 , GEMedium
+        case subTitle //14.0 , GEMedium
         
         private var fontDescriptor: CustomFontDescriptor {
             switch self {
             case .title:
-                return CustomFontDescriptor(font: .geMedium, size: 24.0, style: .title1)
+                return CustomFontDescriptor(font: .geMedium, size: 18.0, style: .title1)
+            case .subTitle:
+                return CustomFontDescriptor(font: .geMedium, size: 10.0, style: .body)
             }
         }
         
