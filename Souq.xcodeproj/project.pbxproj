@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		733DAD159134D9C2993D53B7 /* Pods_Souq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8760106FA65A7902A8859C85 /* Pods_Souq.framework */; };
+		F14D16CC29BDBF2D005675F9 /* Tesyt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D16CB29BDBF2D005675F9 /* Tesyt.swift */; };
 		F158DDE129BC8DC20079E80B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158DDE029BC8DC20079E80B /* AppDelegate.swift */; };
 		F158DDEA29BC8DC40079E80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F158DDE929BC8DC40079E80B /* Assets.xcassets */; };
 		F158DDED29BC8DC40079E80B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158DDEB29BC8DC40079E80B /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 		7E26FE3B1322327FEC94702C /* Pods-Souq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souq.release.xcconfig"; path = "Target Support Files/Pods-Souq/Pods-Souq.release.xcconfig"; sourceTree = "<group>"; };
 		8760106FA65A7902A8859C85 /* Pods_Souq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Souq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3C1F030129A9F26B643C3D /* Pods-Souq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Souq.debug.xcconfig"; path = "Target Support Files/Pods-Souq/Pods-Souq.debug.xcconfig"; sourceTree = "<group>"; };
+		F14D16CB29BDBF2D005675F9 /* Tesyt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tesyt.swift; sourceTree = "<group>"; };
 		F158DDDD29BC8DC20079E80B /* Souq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Souq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F158DDE029BC8DC20079E80B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F158DDE929BC8DC40079E80B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				F158DE4E29BCA8B40079E80B /* Views */,
 				F158DDFC29BC8E6F0079E80B /* Home */,
+				F14D16CB29BDBF2D005675F9 /* Tesyt.swift */,
 			);
 			path = Scense;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				F158DE2A29BC9A280079E80B /* BaseAPI.swift in Sources */,
 				F158DDE129BC8DC20079E80B /* AppDelegate.swift in Sources */,
 				F158DE2929BC9A280079E80B /* APIError.swift in Sources */,
+				F14D16CC29BDBF2D005675F9 /* Tesyt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
